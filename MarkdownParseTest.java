@@ -106,6 +106,7 @@ public class MarkdownParseTest {
         assertEquals(expected, result);
     }
 
+    @Test
     public void getLinksSnippet2Test() throws IOException{
         Path path = Path.of("Snippet2.md");
         String contents = Files.readString(path);
@@ -114,6 +115,7 @@ public class MarkdownParseTest {
         assertEquals(expected, result);
     }
 
+    @Test
     public void getLinksSnippet3Test() throws IOException{
         Path path = Path.of("Snippet3.md");
         String contents = Files.readString(path);
