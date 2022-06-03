@@ -120,7 +120,8 @@ public class MarkdownParseTest {
         Path path = Path.of("Snippet3.md");
         String contents = Files.readString(path);
         ArrayList<String> result = MarkdownParse.getLinks(contents);
-        List<String> expected = List.of("https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule");
+        List<String> expected = List.of(
+                "https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule");
         assertEquals(expected, result);
     }
 
